@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mid-Term Project Prototype</title>
+</head>
+    <body>
+        <header class="section-header">
+                
+            <picture>
+
+                <source srcset="images/roof_1_320.jpg,
+                images/roof_1_640.jpg 2x,
+                images/roof_1_960.jpg 3x"
+                media="(max-width: 320px)"/>
+
+                <source srcset="images/roof_1_480.jpg,
+                images/roof_1_960.jpg 2x,
+                images/roof_1_1440.jpg 3x"
+                media="(max-width: 480px)"/>
+
+                <source srcset="images/roof_1_720.jpg,
+                images/roof_1_1440.jpg 2x,
+                images/roof_1_2160.jpg 3x"
+                media="(max-width: 720px)"/>
+
+                <source srcset="images/roof_1_960.jpg,
+                images/roof_1_1920.jpg 2x,
+                images/roof_1_2880.jpg 3x"
+                media="(max-width: 960px)"/> 
+
+                <img class="roof1" src="images/roof_1.jpg" alt="roof_close_up">
+            </picture>
+       
+            </header>
+           
+        
+        <main>
+            <section class="section-home">
+                    <div class="grid-a">
+                        <div class="nav">
+                       <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"> </a>
+                        
+                        <h2> Shielded Roofing </h2>
+                        <ul>
+                            <li><a  href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a class="active" href="contact.html">Contact</a><li>
+                        </ul>
+                    </div>
+                </div>    
+
+            <section class="grid-b">
+                    <h1 >Contact</h1>
+                <div class="container-a">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="sub">Subject</label>
+                        <textarea id="sub">Write a message</textarea>
+
+                        <input type="submit" value="Submit">
+                </div>   
+            </section>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Jon Beveridge</p>
+        </footer>
+    
+    </body>
+</html>
