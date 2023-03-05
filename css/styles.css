@@ -46,20 +46,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
- 
+
+/* mobile first css styles*/ 
+
 /* basic styles */
-body { 
+  body { 
 
   font-family: 'Open Sans', sans-serif;
 	background: white;
 	font-size: 14px; /* this is 1em */
 	line-height: 1.5;
 	color:black; 
-}
+  }
 
 
 
-h1 {
+  h1 {
 	font-size: 40px;
 	line-height: 106px;
 	font-weight: bold;
@@ -67,26 +69,26 @@ h1 {
   text-align: center;
   text-decoration: underline;
 	
-}
+  }
 
-h2 {
+  h2 {
   font-size: 1.15em;
 	line-height: 1;
 	font-weight: bold;
 	margin-bottom:20px;
 	
 	
-} 
+  } 
 
 
 
-h3 {
+  h3 {
   font-size: 35px;
  
-}
+  }
 
 /* header image style */
-.roof1{
+  .roof1{
   width: 100%;
   height:auto;
   
@@ -94,7 +96,7 @@ h3 {
 }
 
 /* nav style */
-.nav {
+  .nav {
     display: block;
     padding: 0;
     width: 25%;
@@ -130,22 +132,24 @@ h3 {
     color: white;
   }
   
+  /* adds animation to nav links */
   .nav a:hover{
     background-color: #012b3c;
     color: white;
       animation-name: jump;
       animation-duration: 1s;
-    }
+  }
     
     @keyframes jump {
-      50% { transform: translate(0, -100px); }
-    }
+      50% { transform: translate(0, -25px); }
+  }
   
-
+ /* adds white background color to logo so no color shows when mouse hovers */
   #logo:hover{
     background-color:white;
   }
 
+  /* adds hover rotate animation to logo */
   .nav img:hover {
     animation-name: rotate;
     animation-duration: 1s;
@@ -162,147 +166,148 @@ h3 {
   }
 
  
-
-.section-home{
-  display: grid;
-  grid-template-columns: 25% 70%;
+/* adds grid to main section and displays two columns */
+  .section-home{
+    display: grid;
+    grid-template-columns: 25% 70%;
   
+  }
+
+/* adds styles to images */
+
+  .img-a {
+    width: 100%;
+    height:auto;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+    border-radius: 35%;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+  }
+
+
+
+  .img-b {
+    width: 100%;
+    height:auto;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+    border-radius: 35%;
   
-}
+
+  }
+
+  .img-c {
+    width: 100%;
+    height:auto;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+    border-radius: 35%;
+    margin-bottom: 1rem;
+
+  }
+
+/* aligns h2 text to center in class grid-b */
+
+  .grid-b h2{
+    text-align: center;
+  }
+
+/* aligns paragraphs in grid .container to center and adds padding to bottom */
+
+  .container p{
+    text-align:center;
+    padding-bottom: 1rem;
+  }
+
+  .par-contact{
+    display:none;
+  }
+
+/* adds form style on contact page */
+
+  .container-a{
+    box-sizing: border-box;
+    width: 100%;
+  }
 
 
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
 
-.img-a {
-  width: 100%;
-  height:auto;
-  border-style: solid;
-  border-color: #555;
-  border-width: 3px;
-  border-radius: 35%;
-  margin-bottom: 1rem;
-  margin-left: .5rem;
-}
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
 
-
-
-.img-b {
-  width: 100%;
-  height:auto;
-  border-style: solid;
-  border-color: #555;
-  border-width: 3px;
-  border-radius: 35%;
+  input[type=submit] {
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   
+  }
 
-}
+  input[type=submit]:hover {
+    background-color: #012b3c;
+  }
 
-.img-c {
-  width: 100%;
-  height:auto;
-  border-style: solid;
-  border-color: #555;
-  border-width: 3px;
-  border-radius: 35%;
-  margin-bottom: 1rem;
+  textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    color: #909090;
+  }
 
-}
+  .container-a {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    margin-left: 15px;
+  }
 
+/* adds footer style */
 
-
-.grid-b h2{
-  text-align: center;
-}
-
-.container p{
-  text-align:center;
-  padding-bottom: 1rem;
-}
-
-.container-a{
-  box-sizing: border-box;
-  width: 100%;
-}
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #555;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  
-}
-
-input[type=submit]:hover {
-  background-color: #012b3c;
-}
-
-textarea{
-  font-family: Arial, Helvetica, sans-serif;
-  height: 200px;
-  color: #909090;
-}
-
-.container-a {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 50px;
-  margin-left: 15px;
-}
-
-
-
-
-footer{
-  text-align: right;
-  padding-top: .5rem;
-  padding-right: 1rem;
-  background-color: white;
-}
+  footer{
+    text-align: right;
+    padding-top: .5rem;
+    padding-right: 1rem;
+    background-color: white;
+  }
 
 
 @media screen and (min-width:640px) {
   
-  /* general desktop styles */
-
-
+/* general desktop styles */
 
   .nav {
     width: 15%;
       
   }
 
-  /* section-home grid layout */
+  .par-contact{
+    display:block;
+  }
+
+/* section-home grid layout */
 
   .section-home{
     display: grid;
     grid-template-columns: 15% 85%;
     
   }
-  
- /* section grid-b layout */
 
-  .grid-b .container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    
-  }
- 
+/* adds desktop styles to images */
+
   .img-a{
     width: 100%;
     height:auto;
@@ -331,6 +336,19 @@ footer{
     
   }
   
+ 
+
+/* section grid-b layout */
+
+.grid-b .container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  
+}
+
+
+  /* adds images and h2 to correct postitions in grid */
 
   .img-a {
     grid-column: 2 / span 1;
@@ -346,13 +364,41 @@ footer{
     grid-column: 2 / span 1;
   }
 
+ .marshall-1{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+ }
+
   .marshall-2{
     grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
    
   }
 
   .marshall-3{
     grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .par-a{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: 100px;
+    
+  }
+
+  .par-b{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding-top: 100px;
+    
+  }
+
+  .par-c{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    padding-top: 100px;
+    
   }
   
   .item-c img{
@@ -361,6 +407,8 @@ footer{
     border-radius: 0%;
     
   }
+
+/* removes contact and about headers from home page */
 
   .contact{
     display: none;
@@ -371,6 +419,8 @@ footer{
     display: none;
 
   }
+
+/* adds margin left to form container on contact page */
 
   .container-a {
  
