@@ -443,21 +443,21 @@ table {
   .par-a{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    padding-top: 100px;
+    padding-top: 90px;
     
   }
 
   .par-b{
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding-top: 100px;
+    padding-top: 125px;
     
   }
 
   .par-c{
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    padding-top: 100px;
+    padding-top: 150px;
     
   }
   
