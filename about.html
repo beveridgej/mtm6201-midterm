@@ -8,6 +8,8 @@
     <title>Mid-Term Project Prototype</title>
 </head>
     <body>
+
+         <!--Adds responsive image Header to Page-->
         <header class="section-header">
                 
             <picture>
@@ -32,19 +34,34 @@
                 images/roof_1_2880.jpg 3x"
                 media="(max-width: 960px)"/> 
 
+                <source srcset="images/roof_1_800.jpg, 
+                images/roof_1_1600.jpg 2x,
+                images/roof_1_2400.jpg 3x"
+             media="(min-width: 1600px)"/>
+
+            <source srcset="images/roof_1_640.jpg,
+                images/roof_1_1280.jpg 2x,
+                images/roof_1_1920.jpg 3x"
+            media="(min-width: 1280px)"/>
+
+            <source srcset="images/roof_1_480.jpg,
+                images/roof_1_960.jpg 2x,
+                images/roof_1_1440.jpg 3x"
+            media="(min-width: 960px)"/>
+
                 <img class="roof1" src="images/roof_1.jpg" alt="roof_close_up">
             </picture>
-       
+            
             </header>
            
-        
+        <!--Adds main section to page, nav, grid for section, schema, links to index & contact, makes about link active-->
         <main>
             <section class="section-home">
                     <div class="grid-a">
-                        <div class="nav">
-                       <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"> </a>
+                        <div itemscope itemtype="https://schema.org/LocalBusiness"  class="nav">
+                       <a itemprop="logo" id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roofing_logo"> </a>
                         
-                        <h2> Shielded Roofing </h2>
+                        <h2><span itemprop="name"></span> Shielded Roofing </h2>
                         <ul>
                             <li><a  href="index.html">Home</a></li>
                             <li><a class="active" href="about.html">About</a></li>
@@ -53,24 +70,144 @@
                     </div>
                 </div>    
 
+               
+                <!--Adds grid to about section, schema, paragraphs, heading 1, responsive images with heading 2s--> 
             <section class="grid-b">
-                    <h1 >About</h1>
+                <h1 >About</h1>
                     
-                <div class="container">
+                <div itemscope itemtype="https://schema.org/Person" class="container">
                     
-                    
+                    <picture>
+
+                        <source srcset="images/martha_marshall_320.jpg,
+                        images/martha_marshall_640.jpg 2x,
+                        images/martha_marshall_960.jpg 3x"
+                        media="(max-width: 320px)"/>
+        
+                        <source srcset="images/martha_marshall_480.jpg,
+                        images/martha_marshall_960.jpg 2x,
+                        images/martha_marshall_1440.jpg 3x"
+                        media="(max-width: 480px)"/>
+        
+                        <source srcset="images/martha_marshall_720.jpg,
+                        images/martha_marshall_1440.jpg 2x,
+                        images/martha_marshall_2160.jpg 3x"
+                        media="(max-width: 720px)"/>
+        
+                        <source srcset="images/martha_marshall_960.jpg,
+                        images/martha_marshall_1920.jpg 2x,
+                        images/martha_marshall_2880.jpg 3x"
+                        media="(max-width: 960px)"/> 
+        
+                        <source srcset="images/martha_marshall_800.jpg, 
+                        images/martha_marshall_1600.jpg 2x,
+                        images/martha_marshall_2400.jpg 3x"
+                     media="(min-width: 1600px)"/>
+        
+                    <source srcset="images/martha_marshall_640.jpg,
+                        images/martha_marshall_1280.jpg 2x,
+                        images/martha_marshall_1920.jpg 3x"
+                    media="(min-width: 1280px)"/>
+        
+                    <source srcset="images/martha_marshall_480.jpg,
+                        images/martha_marshall_960.jpg 2x,
+                        images/martha_marshall_1440.jpg 3x"
+                    media="(min-width: 960px)"/>
+        
                     <img class="img-a" src="images/martha_marshall.jpg" alt="martha marshall">
-                    <h2 class="marshall-1">Martha Marshall</h2>
+                    </picture>
+
+                    
+                    <h2 itemprop="name" class="marshall-1">Martha Marshall</h2>
                     <p class="par-a">Hi I'm Martha, I'll be the project lead helping you get to the shield you need on your house.</p>
                     
                     
-                        <img class="img-b" src="images/tex_marshall.jpg" alt="tex marshall">
-                        <h2 class="marshall-2">Tex Marshall</h2>
+                    <picture>
+
+                        <source srcset="images/tex_marshall_320.jpg,
+                        images/tex_marshall_640.jpg 2x,
+                        images/tex_marshall_960.jpg 3x"
+                        media="(max-width: 320px)"/>
+        
+                        <source srcset="images/tex_marshall_480.jpg,
+                        images/tex_marshall_960.jpg 2x,
+                        images/tex_marshall_1440.jpg 3x"
+                        media="(max-width: 480px)"/>
+        
+                        <source srcset="images/tex_marshall_720.jpg,
+                        images/tex_marshall_1440.jpg 2x,
+                        images/tex_marshall_2160.jpg 3x"
+                        media="(max-width: 720px)"/>
+        
+                        <source srcset="images/tex_marshall_960.jpg,
+                        images/tex_marshall_1920.jpg 2x,
+                        images/tex_marshall_2880.jpg 3x"
+                        media="(max-width: 960px)"/> 
+        
+                        <source srcset="images/tex_marshall_800.jpg, 
+                        images/tex_marshall_1600.jpg 2x,
+                        images/tex_marshall_2400.jpg 3x"
+                     media="(min-width: 1600px)"/>
+        
+                    <source srcset="images/tex_marshall_640.jpg,
+                        images/tex_marshall_1280.jpg 2x,
+                        images/tex_marshall_1920.jpg 3x"
+                    media="(min-width: 1280px)"/>
+        
+                    <source srcset="images/tex_marshall_480.jpg,
+                        images/tex_marshall_960.jpg 2x,
+                        images/tex_marshall_1440.jpg 3x"
+                    media="(min-width: 960px)"/>
+        
+                    <img class="img-b" src="images/tex_marshall.jpg" alt="tex marshall">
+                    </picture>
+
+                        
+                        <h2 itemprop="name" class="marshall-2">Tex Marshall</h2>
                         <p class="par-b">Hi I'm Martha, I'll be the project lead helping you get to the shield you need on your house.</p>
                         
                         
-                        <img class="img-c" src="images/darby_marshall.jpg" alt="darby marshall">
-                        <h2 class="marshall-3">Darby Marshall</h2>
+                        <picture>
+
+                            <source srcset="images/darby_marshall_320.jpg,
+                            images/darby_marshall_640.jpg 2x,
+                            images/darby_marshall_960.jpg 3x"
+                            media="(max-width: 320px)"/>
+            
+                            <source srcset="images/darby_marshall_480.jpg,
+                            images/darby_marshall_960.jpg 2x,
+                            images/darby_marshall_1440.jpg 3x"
+                            media="(max-width: 480px)"/>
+            
+                            <source srcset="images/darby_marshall_720.jpg,
+                            images/darby_marshall_1440.jpg 2x,
+                            images/darby_marshall_2160.jpg 3x"
+                            media="(max-width: 720px)"/>
+            
+                            <source srcset="images/darby_marshall_960.jpg,
+                            images/darby_marshall_1920.jpg 2x,
+                            images/darby_marshall_2880.jpg 3x"
+                            media="(max-width: 960px)"/> 
+            
+                            <source srcset="images/darby_marshall_800.jpg, 
+                            images/darby_marshall_1600.jpg 2x,
+                            images/darby_marshall_2400.jpg 3x"
+                         media="(min-width: 1600px)"/>
+            
+                        <source srcset="images/darby_marshall_640.jpg,
+                            images/darby_marshall_1280.jpg 2x,
+                            images/darby_marshall_1920.jpg 3x"
+                        media="(min-width: 1280px)"/>
+            
+                        <source srcset="images/darby_marshall_480.jpg,
+                            images/darby_marshall_960.jpg 2x,
+                            images/darby_marshall_1440.jpg 3x"
+                        media="(min-width: 960px)"/>
+            
+                        <img class="img-b" src="images/tex_marshall.jpg" alt="tex marshall">
+                        </picture>
+
+                        <h2 itemprop="name" class="marshall-3">Darby Marshall</h2>
                         <p class="par-c">Hi I'm Martha, I'll be the project lead helping you get to the shield you need on your house.</p>
 
 
@@ -80,6 +217,7 @@
             </section>
         </main>
 
+        <!--Adds footer with copyright-->
         <footer>
             <p>&copy; Jon Beveridge</p>
         </footer>

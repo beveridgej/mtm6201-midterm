@@ -8,41 +8,58 @@
     <title>Mid-Term Project Prototype</title>
 </head>
     <body>
+
+         <!--Adds responsive image Header to Page-->
         <header class="section-header">
                 
             <picture>
 
-                <source srcset="images/roof_1_320.jpg,
-                images/roof_1_640.jpg 2x,
-                images/roof_1_960.jpg 3x"
+                <source srcset="images/contact_320.jpg,
+                images/contact_640.jpg 2x,
+                images/contact_960.jpg 3x"
                 media="(max-width: 320px)"/>
 
-                <source srcset="images/roof_1_480.jpg,
-                images/roof_1_960.jpg 2x,
-                images/roof_1_1440.jpg 3x"
+                <source srcset="images/contact_480.jpg,
+                images/contact_960.jpg 2x,
+                images/contact_1440.jpg 3x"
                 media="(max-width: 480px)"/>
 
-                <source srcset="images/roof_1_720.jpg,
-                images/roof_1_1440.jpg 2x,
-                images/roof_1_2160.jpg 3x"
+                <source srcset="images/contact_720.jpg,
+                images/contact_1440.jpg 2x,
+                images/contact_2160.jpg 3x"
                 media="(max-width: 720px)"/>
 
-                <source srcset="images/roof_1_960.jpg,
-                images/roof_1_1920.jpg 2x,
-                images/roof_1_2880.jpg 3x"
+                <source srcset="images/contact_960.jpg,
+                images/contact_1920.jpg 2x,
+                images/contact_2880.jpg 3x"
                 media="(max-width: 960px)"/> 
 
-                <img class="roof1" src="images/roof_1.jpg" alt="roof_close_up">
+                <source srcset="images/contact_800.jpg, 
+                images/contact_1600.jpg 2x,
+                images/contact_2400.jpg 3x"
+             media="(min-width: 1600px)"/>
+
+            <source srcset="images/contact_640.jpg,
+                images/contact_1280.jpg 2x,
+                images/contact_1920.jpg 3x"
+            media="(min-width: 1280px)"/>
+
+            <source srcset="images/contact_480.jpg,
+                images/contact_960.jpg 2x,
+                images/contact_1440.jpg 3x"
+            media="(min-width: 960px)"/>
+
+                <img class="roof1" src="images/contact.jpg" alt="roof_planning">
             </picture>
-       
+            
             </header>
            
-        
+         <!--Adds main section to page, nav, grid for section, schema, links to index & about, makes contact link active-->
         <main>
             <section class="section-home">
                     <div class="grid-a">
                         <div class="nav">
-                       <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"> </a>
+                       <a id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roofing_logo"> </a>
                         
                         <h2> Shielded Roofing </h2>
                         <ul>
@@ -50,13 +67,15 @@
                             <li><a href="about.html">About</a></li>
                             <li><a class="active" href="contact.html">Contact</a><li>
                         </ul>
+                     
                     </div>
                 </div>    
 
-            <section class="grid-b">
-                    <h1 >Contact</h1>
+                <!--Adds grid to section, schema, paragraph, heading 1, contact form-->
+            <section itemscope itemtype="https://schema.org/LocalBusiness" class="grid-b">
+                <h1>Contact</h1>
                 <div class="container-a">
-                    <form action="/action_page.php">
+                    <form itemprop="contactPoint" action="/action_page.php">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
                     
@@ -73,6 +92,7 @@
             </section>
         </main>
 
+        <!--Adds footer with copyright-->
         <footer>
             <p>&copy; Jon Beveridge</p>
         </footer>

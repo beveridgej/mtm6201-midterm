@@ -8,8 +8,10 @@
     <title>Mid-Term Project Prototype</title>
 </head>
     <body>
-        <header class="section-header">
-                
+        
+        <!--Adds responsive image Header to Page-->
+        <header role="banner" class="section-header">
+            
             <picture>
 
                 <source srcset="images/roof_2_320.jpg,
@@ -30,44 +32,146 @@
                 <source srcset="images/roof_2_960.jpg,
                 images/roof_2_1920.jpg 2x,
                 images/roof_2_2880.jpg 3x"
-                media="(max-width: 960px)"/> 
+                media="(max-width: 959px)"/> 
+
+                <source srcset="images/roof_2_800.jpg, 
+                    images/roof_2_1600.jpg 2x,
+                    images/roof_2_2400.jpg 3x"
+                 media="(min-width: 1600px)"/>
+
+                <source srcset="images/roof_2_640.jpg,
+                    images/roof_2_1280.jpg 2x,
+                    images/roof_2_1920.jpg 3x"
+                media="(min-width: 1280px)"/>
+
+                <source srcset="images/roof_2_480.jpg,
+                    images/roof_2_960.jpg 2x,
+                    images/roof_2_1440.jpg 3x"
+                media="(min-width: 960px)"/>
 
                 <img class="roof1" src="images/roof_2.jpg" alt="roof_close_up">
             </picture>
-       
+            
             </header>
            
-        
-        <main>
+        <!--Adds main section to page, nav, grid for section, schema, links to about & contact-->
+        <main role="main">
             <section class="section-home">
                     <div class="grid-a">
-                        <div class="nav">
-                       <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"> </a>
+                        <div itemscope itemtype="https://schema.org/LocalBusiness" class="nav">
+                            <a itemprop="logo" id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roof_logo"> </a>
                         
-                        <h2> Shielded Roofing </h2>
+                        <h2> <span itemprop="name"></span> Shielded Roofing </h2>
+                        <nav role="navigation">
                         <ul>
                             <li><a class="active" href="#">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a><li>
                         </ul>
+                        </nav>
                 
                         
 
                     </div>
                 </div>    
 
+
+                <!--Adds grid to section, schema, paragraph, heading 1, responsive images with links and heading 2s-->
             <section class="grid-b">
-                    <h1 >Home</h1>
-                <div class="container">
-                    
+                <h1 role="heading">Home</h1>
+                <div itemscope itemtype="https://schema.org/LocalBusiness" class="container">
+                    <div>
                     <p> Welcome to Shielded Roofing. 
                      Here you will find all the information you need to get to know the team so that you can feel comfortable knowing your roof has the shield it deserves.</p>
-                    <a href="about.html"> <img class="img-a" src="images/roof_1_4270.jpg" alt="about"> </a>
+                    </div>
+
+
+                    <picture>
+
+                        <source srcset="images/roof_1_320.jpg,
+                        images/roof_1_640.jpg 2x,
+                        images/roof_1_960.jpg 3x"
+                        media="(max-width: 320px)"/>
+        
+                        <source srcset="images/roof_1_480.jpg,
+                        images/roof_1_960.jpg 2x,
+                        images/roof_1_1440.jpg 3x"
+                        media="(max-width: 480px)"/>
+        
+                        <source srcset="images/roof_1_720.jpg,
+                        images/roof_1_1440.jpg 2x,
+                        images/roof_1_2160.jpg 3x"
+                        media="(max-width: 720px)"/>
+        
+                        <source srcset="images/roof_1_960.jpg,
+                        images/roof_1_1920.jpg 2x,
+                        images/roof_1_2880.jpg 3x"
+                        media="(max-width: 959px)"/> 
+        
+                        <source srcset="images/roof_1_800.jpg, 
+                            images/roof_1_1600.jpg 2x,
+                            images/roof_1_2400.jpg 3x"
+                         media="(min-width: 1600px)"/>
+        
+                        <source srcset="images/roof_1_640.jpg,
+                            images/roof_1_1280.jpg 2x,
+                            images/roof_1_1920.jpg 3x"
+                        media="(min-width: 1280px)"/>
+        
+                        <source srcset="images/roof_1_480.jpg,
+                            images/roof_1_960.jpg 2x,
+                            images/roof_1_1440.jpg 3x"
+                        media="(min-width: 960px)"/>
+        
+                        <a itemprop="alumni" href="about.html"> <img class="img-a" src="images/roof_1_4270.jpg" alt="about"> </a>
+
+                    </picture>
+                    
                     <h2 class="about">About</h2>
 
+                    <picture>
+
+                        <source srcset="images/contact_320.jpg,
+                        images/contact_640.jpg 2x,
+                        images/contact_960.jpg 3x"
+                        media="(max-width: 320px)"/>
+        
+                        <source srcset="images/contact_480.jpg,
+                        images/contact_960.jpg 2x,
+                        images/contact_1440.jpg 3x"
+                        media="(max-width: 480px)"/>
+        
+                        <source srcset="images/contact_720.jpg,
+                        images/contact_1440.jpg 2x,
+                        images/contact_2160.jpg 3x"
+                        media="(max-width: 720px)"/>
+        
+                        <source srcset="images/contact_960.jpg,
+                        images/contact_1920.jpg 2x,
+                        images/contact_2880.jpg 3x"
+                        media="(max-width: 959px)"/> 
+        
+                        <source srcset="images/contact_800.jpg, 
+                            images/contact_1600.jpg 2x,
+                            images/contact_2400.jpg 3x"
+                         media="(min-width: 1600px)"/>
+        
+                        <source srcset="images/contact_640.jpg,
+                            images/contact_1280.jpg 2x,
+                            images/contact_1920.jpg 3x"
+                        media="(min-width: 1280px)"/>
+        
+                        <source srcset="images/contact_480.jpg,
+                            images/contact_960.jpg 2x,
+                            images/contact_1440.jpg 3x"
+                        media="(min-width: 960px)"/>
+        
+                        <a itemprop="alumni" href="contact.html"> <img class="img-b" src="images/contact_4270.jpg" alt="roof_wide"> </a>
+
+                    </picture>
+
                     
-                    <a href="contact.html"> <img class="img-b" src="images/contact_4270.jpg" alt="roof_wide"> </a>
-                    <p class="par-contact">If you have questions or want to discuss the specifics about your roof and how we work don't hesitate to contact us</p>
+                    <p class="par-contact">If you have questions or want to discuss the specifics about your roof and how we work don't hesitate to contact us.</p>
                     <h2 class="contact">Contact</h2>
 
                 </div>   
@@ -76,7 +180,8 @@
             </section>
         </main>
 
-        <footer>
+        <!--Adds footer with copyright-->
+        <footer role="contentinfo">
             <p>&copy; Jon Beveridge</p>
         </footer>
     
