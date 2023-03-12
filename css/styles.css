@@ -184,26 +184,16 @@ table {
     transition: 1s;
     transform: rotatey(360deg)
   }
-
-
-    
-  
-
-  
  
 /* adds grid to main section and displays two columns */
   .section-home{
     display: grid;
     grid-template-columns: 25% 70%;
-    
-    
-    
-  
   }
 
 /* adds styles to images */
 
-  .img-a {
+   .img-a {
     width: 100%;
     height:auto;
     border-style: solid;
