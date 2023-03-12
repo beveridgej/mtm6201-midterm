@@ -302,7 +302,7 @@ table {
     
   }
 
-   ::placeholder{
+  ::placeholder{
     color: black;
   }
 
