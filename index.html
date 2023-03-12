@@ -8,7 +8,15 @@
     <title>Mid-Term Project Prototype</title>
 </head>
     <body>
-        
+        <!--Adds skip links-->
+        <div class="container">
+            <ul class="skip-links">
+              <li><a href="#home">Skip to main nav</a></li>
+              <li><a href="#nav">Skip to main content</a></li>
+              <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </div>
+
         <!--Adds responsive image Header to Page-->
         <header role="banner" class="section-header">
             
@@ -62,7 +70,7 @@
                             <a itemprop="logo" id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roof_logo"> </a>
                         
                         <h2> <span itemprop="name"></span> Shielded Roofing </h2>
-                        <nav role="navigation">
+                        <nav role="navigation" id="nav">
                         <ul>
                             <li><a class="active" href="#">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -78,7 +86,7 @@
 
                 <!--Adds grid to section, schema, paragraph, heading 1, responsive images with links and heading 2s-->
             <section class="grid-b">
-                <h1 role="heading">Home</h1>
+                <h1 role="heading" id="home">Home</h1>
                 <div itemscope itemtype="https://schema.org/LocalBusiness" class="container">
                     <div>
                     <p> Welcome to Shielded Roofing. 
@@ -183,7 +191,7 @@
         </main>
 
         <!--Adds footer with copyright-->
-        <footer role="contentinfo">
+        <footer role="contentinfo" id="footer">
             <p>&copy; Jon Beveridge</p>
         </footer>
     

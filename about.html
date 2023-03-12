@@ -8,9 +8,17 @@
     <title>Mid-Term Project Prototype</title>
 </head>
     <body>
+        <!--Adds skip links-->
+        <div class="container">
+            <ul class="skip-links">
+              <li><a href="#nav">Skip to main nav</a></li>
+              <li><a href="#about">Skip to main content</a></li>
+              <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </div>
 
          <!--Adds responsive image Header to Page-->
-        <header class="section-header">
+        <header role="banner" class="section-header">
                 
             <picture>
 
@@ -55,13 +63,14 @@
             </header>
            
         <!--Adds main section to page, nav, grid for section, schema, links to index & contact, makes about link active-->
-        <main>
+        <main role="main" >
             <section class="section-home">
                     <div class="grid-a">
                         <div itemscope itemtype="https://schema.org/LocalBusiness"  class="nav">
                        <a itemprop="logo" id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roofing_logo"> </a>
                         
                         <h2><span itemprop="name"></span> Shielded Roofing </h2>
+                        <nav role="navigation" id="nav"></nav>
                         <ul>
                             <li><a  href="index.html">Home</a></li>
                             <li><a class="active" href="about.html">About</a></li>
@@ -73,7 +82,7 @@
                
                 <!--Adds grid to about section, schema, paragraphs, heading 1, responsive images with heading 2s--> 
             <section class="grid-b">
-                <h1 >About</h1>
+                <h1 id="about">About </h1>
                     
                 <div itemscope itemtype="https://schema.org/Person" class="container">
                     
@@ -164,7 +173,7 @@
 
                         
                         <h2 itemprop="name" class="marshall-2">Tex Marshall</h2>
-                        <p class="par-b">Hi I'm Tex, I'm going to be the director of construction working on your roof. I've working with ther family buisness since the beginning and always make suyre clients are in good hands.</p>
+                        <p class="par-b">Hi I'm Tex, I'm going to be the director of construction working on your roof. I've been working in the family buisness since the inception and always make suyre clients are in good hands.</p>
                         
                         
                         <picture>
@@ -204,7 +213,7 @@
                             images/darby_marshall_1440.jpg 3x"
                         media="(min-width: 960px)"/>
             
-                        <img class="img-b" src="images/darby_marshall.jpg" alt="tex marshall">
+                        <img class="img-b" src="images/darby_marshall.jpg" alt="darby marshall">
                         </picture>
 
                         <h2 itemprop="name" class="marshall-3">Darby Marshall</h2>
@@ -218,7 +227,7 @@
         </main>
 
         <!--Adds footer with copyright-->
-        <footer>
+        <footer role="contentinfo" id="footer">
             <p>&copy; Jon Beveridge</p>
         </footer>
     

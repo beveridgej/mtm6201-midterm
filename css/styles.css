@@ -111,6 +111,30 @@ table {
  
   }
 
+   /* displays skip links on focus */
+  .skip-links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+  
+    
+    
+  }
+  .skip-links a{
+    position:absolute;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    top:-3em;
+
+  }
+
+  .skip-links a:focus{
+    color: aqua;
+    top: 0;
+  }
+
 
 
   /* header style */
@@ -345,6 +369,12 @@ table {
 
   .par-contact{
     display:block;
+  }
+
+  .skip-links{
+    list-style: none;
+    margin: 0;
+    padding-left: 10rem;
   }
 
 /* section-home grid layout */

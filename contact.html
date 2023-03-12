@@ -9,6 +9,16 @@
 </head>
     <body>
 
+         <!--Adds skip links-->
+         <div class="container">
+            <ul class="skip-links">
+              <li><a href="#nav">Skip to main nav</a></li>
+              <li><a href="#contact">Skip to main content</a></li>
+              <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </div>
+
+
          <!--Adds responsive image Header to Page-->
         <header class="section-header">
                 
@@ -62,6 +72,7 @@
                        <a id="logo" href="index.html"><img src="images/logo.png" alt="shielded_roofing_logo"> </a>
                         
                         <h2> Shielded Roofing </h2>
+                        <nav role="navigation" id="nav"></nav>
                         <ul>
                             <li><a  href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -73,7 +84,7 @@
 
                 <!--Adds grid to section, schema, paragraph, heading 1, contact form-->
             <section itemscope itemtype="https://schema.org/LocalBusiness" class="grid-b">
-                <h1>Contact</h1>
+                <h1 id="contact">Contact</h1>
                 <div class="container-a">
                     <form itemprop="contactPoint" action="/action_page.php">
                         <label for="fname">First Name</label>
@@ -93,7 +104,7 @@
         </main>
 
         <!--Adds footer with copyright-->
-        <footer>
+        <footer role="contentinfo" id="footer">
             <p>&copy; Jon Beveridge</p>
         </footer>
     
