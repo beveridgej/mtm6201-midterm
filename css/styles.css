@@ -63,6 +63,7 @@ table {
 
 
   h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5em;
   color:#012b3c;
 	line-height: 106px;
@@ -93,7 +94,10 @@ table {
       z-index: -1;
     }
 
-  
+   
+   h1:hover{
+    color:#555;
+   }
   
 
   h2 {
@@ -204,9 +208,14 @@ table {
   }
 
   /* adds hover rotate animation to logo */
-  .nav img:hover {
-    transition: 1s;
-    transform: rotatey(360deg)
+  .nav img {
+    animation: flip 5s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
   }
  
 /* adds grid to main section and displays two columns */
@@ -356,12 +365,15 @@ table {
 /* adds footer style */
 
   footer{
-    text-align: right;
-    padding-top: .5rem;
+    color: white;
+    padding-top: 5rem;
     padding-right: 1rem;
-    background-color: white;
+    background-color: #012b3c;
   }
 
+  footer .copy{
+    text-align: right;
+  }
 
 @media screen and (min-width:640px) {
   
